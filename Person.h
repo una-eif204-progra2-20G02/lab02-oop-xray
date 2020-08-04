@@ -14,14 +14,14 @@ using namespace std;
  * Abstract Class of Person
  */
 class Person {
-  private:
+  protected:
   string firtName;
   string lastName;
   int documentld;
 
   public:
   Person();
-  Person(string firtName, string lastName, int documentld);
+  Person(string,string,int);
 
   string getFisrtName();
   string getLastName();
