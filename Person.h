@@ -22,6 +22,18 @@ class Person {
   public:
   Person();
   Person(string firtName, string lastName, int documentld);
+
+  string getFisrtName();
+  string getLastName();
+  int getDocumentId();
+
+  void setFirstName(string);
+  void setLastName(string);
+  void setDocumentId(int);
+  
+  virtual const double salary() = 0;
+  virtual const string toString() = 0; 
+
 };
 
 
