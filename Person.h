@@ -22,7 +22,8 @@ class Person {
   public:
   Person();
   Person(string,string,int);
-
+  virtual ~Person();
+  
   string getFisrtName();
   string getLastName();
   int getDocumentId();
