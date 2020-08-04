@@ -8,12 +8,20 @@
 
 #include <string>
 #include <ostream>
+using namespace std;
 
 /**
  * Abstract Class of Person
  */
 class Person {
+  private:
+  string firtName;
+  string lastName;
+  int documentld;
 
+  public:
+  Person();
+  Person(string firtName, string lastName, int documentld);
 };
 
 
