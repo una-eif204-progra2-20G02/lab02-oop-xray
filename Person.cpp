@@ -6,6 +6,8 @@
 
 int Person::Person(string f, string l, int d) : firstName(f), lastName(l), documentId(d) {}
 
+virtual Person::~Person(){}
+
 string Person::getFirstName() {return firstName;}
 string Person::getLastName() {return lastName;}
 int Person::getDocumentId() {return documentId;}
