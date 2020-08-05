@@ -7,28 +7,37 @@
 #include "Professor.h"
 
 
-  Professor() {}
-  Professor(double ms,double cr) {
-    monthlySalary = ms;
-    commissionRate = cr;
+  Professor::Professor() 
+  {
+    this->monthlySalary = 0;
+    this->commissionRate = 0;
   }
-  Professor(string f,string l,int d,double ms,double cr)
-  : firstName(f), lastName(l), documentId(d)  {
-    monthlySalary = ms;
-    commissionRate = cr;    
+  Professor::Professor(double monthlySalary,double commissionRate) 
+  {
+    this->monthlySalary = monthlySalary;
+    this->commissionRate = commissionRate;
   }
-  virtual Professor::~Professor()
+  Professor::Professor(string firstName, string lastName ,int documentId ,double monthlySalary ,double commissionRate ) : Person(firstName, lastName, documentId)
+  {
+    this->monthlySalary = monthlySalary;
+    this->commissionRate = commissionRate;    
+  }
+  Professor::~Professor(){} 
 
-  double Professor::getMonthlySalary() { return monthlySalary;}
+  double Professor ::getMonthlySalary() { return monthlySalary;}
   double Professor::getCommissionRate() {return commissionRate;}
 
-  void Professor::setMonthlySalary(double ms) { monthlySalary = ms;}
-  void Professor::setCommissionRate(double cr) { commissionRate = cr;}
+  void Professor::setMonthlySalary(double monthlySalary ) { this->monthlySalary = monthlySalary ;}
+  void Professor::setCommissionRate(double commissionRate ) { this->commissionRate = commissionRate;}
 
   double Professor::salary() {}
   
   string Professor::toString() {
-    stringtostream p;
-    //Por completar
-    return p.str();
+    stringstream s;
+    s<< "nombre: "<< getNombre() << endl;
+    s<< "apellido: "<< getLastName() << endl;
+    s<< "ID del documento" << get documentId <<endl;
+    s<<"salario mensual: " << monthlySalary <<endl;
+    s<<"porcentaje de comision: " << commissionRate <<endl;
+    return s.str();
   }

@@ -14,15 +14,15 @@ private:
 
 public:
   Professor();
-  Professor(double,double);
-  Professor(string,string,int,double,double);
-  virtual ~Professor();
+  Professor(double monthlySalary,double commissionRate);
+  Professor(string firstName ,string lastName ,int documentId ,double monthlySalary,double commissionRate);
+  ~Professor();
 
   double getMonthlySalary();
   double getCommissionRate();
 
-  void setMonthlySalary(double);
-  void setCommissionRate(double);
+  void setMonthlySalary(double monthlySalary);
+  void setCommissionRate(double commissionRate);
 
   double salary();
   string toString();

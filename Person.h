@@ -14,26 +14,26 @@ using namespace std;
  * Abstract Class of Person
  */
 class Person {
-  protected:
-  string firtName;
+  private:
+  string firstName;
   string lastName;
-  int documentld;
+  int documentId;
 
   public:
   Person();
-  Person(string,string,int);
+  Person(string firstName ,string lastName ,int documentId);
   virtual ~Person();
   
   string getFisrtName();
   string getLastName();
   int getDocumentId();
 
-  void setFirstName(string);
-  void setLastName(string);
-  void setDocumentId(int);
+  void setFirstName(string firstName);
+  void setLastName(string lastName);
+  void setDocumentId(int documentId);
   
-  virtual const double salary() = 0;
-  virtual const string toString() = 0; 
+  virtual double salary() = 0;
+  virtual string toString() = 0; 
 
 };
 

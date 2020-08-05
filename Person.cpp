@@ -4,14 +4,17 @@
 
 #include "Person.h"
 
-int Person::Person(string f, string l, int d) : firstName(f), lastName(l), documentId(d) {}
+Person::Person(string firstName, string lastName, int documentId ) { this->firstName = firstName;
+  this->lastName = lastName;
+  this->documentId = documentId;
+}
 
-virtual Person::~Person(){}
+Person::~Person(){}
 
 string Person::getFirstName() {return firstName;}
 string Person::getLastName() {return lastName;}
 int Person::getDocumentId() {return documentId;}
 
-void Person::setFirstName(string f) { firstName = f;}
-void Person::setLastName(string l) {lastName = l;}
-void Person::setDocumentId(int d) {documentId = d;}
+void Person::setFirstName(string firstName ) {this->firstName = firstName;}
+void Person::setLastName(string lastName ) {this->lastName = lastName;}
+void Person::setDocumentId(int documtId ) {this->documentId = documentId;}
