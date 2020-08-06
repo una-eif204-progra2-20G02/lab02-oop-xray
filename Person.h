@@ -24,7 +24,7 @@ class Person {
   Person(string firstName ,string lastName ,int documentId);
   virtual ~Person();
   
-  string getFisrtName();
+  string getFirstName();
   string getLastName();
   int getDocumentId();
 

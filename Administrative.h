@@ -6,7 +6,7 @@
 #define LAB02_OOP_ADMINISTRATIVE_H
 #include <iostream>
 #include "Person.h"
-Using namespace std;
+using namespace std;
 
 class Administrative: public Person {
 private:

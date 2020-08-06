@@ -6,10 +6,9 @@
 #include <iomanip>
 #include "Administrative.h"
 
-
-  Administrative::Administrative() 
+  Administrative::Administrative()
   {
-    this->monthlySalary = monthlySalary;
+    this->monthlySalary = 0;
   }
   Administrative::Administrative(double monthlySalary ) 
   {
@@ -28,12 +27,16 @@
     this->monthlySalary = monthlySalary;
   }
 
-  double Administrative::salary() {}
-  string Administrative::toString() {
-    stringtostream s;
-    s<<"nombre: " << getNombre() <<endl;
-    s<<"apellido: ", << getLastName() <<endl;
-    s
-    s<<"salario mensual:  " << monthlySalary <<endl; "ID del documento: " <<get documentId() <<endl;
+  double Administrative::salary() 
+  {
+    return;
+  }
+  string Administrative::toString()
+  {
+    stringstream s;
+    s<< "nombre: " << getFirstName() <<endl;
+    s<< "apellido: " << getLastName() <<endl;
+    s<< "Id del documento" << getDocumentId() <<endl;
+    s<< "salario mensual:  " << monthlySalary <<endl;
    return s.str();
   }

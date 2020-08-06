@@ -30,14 +30,18 @@
   void Professor::setMonthlySalary(double monthlySalary ) { this->monthlySalary = monthlySalary ;}
   void Professor::setCommissionRate(double commissionRate ) { this->commissionRate = commissionRate;}
 
-  double Professor::salary() {}
+  double Professor::salary()
+  {
+    return;
+  }
   
-  string Professor::toString() {
+  string Professor::toString()
+  {
     stringstream s;
-    s<< "nombre: "<< getNombre() << endl;
+    s<< "nombre: "<< getFirstName() << endl;
     s<< "apellido: "<< getLastName() << endl;
-    s<< "ID del documento" << get documentId <<endl;
-    s<<"salario mensual: " << monthlySalary <<endl;
-    s<<"porcentaje de comision: " << commissionRate <<endl;
+    s<< "ID del documento: " << getDocumentId() <<endl;
+    s<< "salario mensual: " << monthlySalary <<endl;
+    s<< "porcentaje de comision: " << commissionRate <<endl;
     return s.str();
   }
