@@ -15,19 +15,26 @@ private:
 string name;
 Professor professor;
 Administrative administrative;
+vector<Professor> professorList;
+vector<Administrative> administrativeList;
 
 public:
 University();
 University(string name);
 University(string name,Professor professor,Administrative administrative);
+
 string getName();
 Professor getProfesor();
 Administrative getAdministrative();
+Professor* getProfesorList();
+Administrative* getAdministrativeList();
+
 void setName(string name);
 void setProfessor(Professor professor);
 void setAdministrative(Administrative administrative);
 
-
+Professor addProfessor(Professor professor);
+Administrative addAdministrative(Administrative administrative);
 };
 
 
