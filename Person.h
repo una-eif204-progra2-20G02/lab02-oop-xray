@@ -14,7 +14,7 @@ using namespace std;
  * Abstract Class of Person
  */
 class Person {
-  private:
+  protected:
   string firstName;
   string lastName;
   int documentId;
