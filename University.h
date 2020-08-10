@@ -24,9 +24,9 @@ University(string name);
 University(string name,Professor professor,Administrative administrative);
 
 string getName();
-Professor getProfesor();
+Professor getProfessor();
 Administrative getAdministrative();
-Professor* getProfesorList();
+Professor* getProfessorList();
 Administrative* getAdministrativeList();
 
 void setName(string name);

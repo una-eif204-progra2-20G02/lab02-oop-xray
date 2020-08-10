@@ -4,7 +4,9 @@
 
 #include "Person.h"
 
-Person::Person(string firstName, string lastName, int documentId ) { this->firstName = firstName;
+Person::Person(string firstName, string lastName, int documentId )
+{ 
+  this->firstName = firstName;
   this->lastName = lastName;
   this->documentId = documentId;
 }
@@ -17,4 +19,4 @@ int Person::getDocumentId() {return documentId;}
 
 void Person::setFirstName(string firstName ) {this->firstName = firstName;}
 void Person::setLastName(string lastName ) {this->lastName = lastName;}
-void Person::setDocumentId(int documtId ) {this->documentId = documentId;}
+void Person::setDocumentId(int documentId ) {this->documentId = documentId;}
